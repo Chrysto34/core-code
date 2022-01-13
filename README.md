@@ -6,7 +6,7 @@ Day1: A bit of history and reviewed the tools. will see what the future holds
 Day2: 
 1. Intermidiate code for interpretation languages, or also called bytecode
 
-2.Java language is compiled or interpreted? 
+2.  Java language is compiled or interpreted? 
 Java can be considered both a compiled and an interpreted language because its source code is first compiled into a binary byte-code. This byte-code runs on the Java Virtual Machine (JVM), which is usually a software-based interpreter. The use of compiled byte-code allows the interpreter (the virtual machine) to be small and efficient (and nearly as fast as the CPU running native, compiled code). In addition, this byte-code gives Java its portability: it will run on any JVM that is correctly implemented, regardless of computer hardware or software configuration. Most Web browsers (such as Microsoft Internet Explorer or Netscape Communicator) contain a JVM to run Java applets.
 
 3. totdlsrs = 700; Total amount of dollars
@@ -44,7 +44,7 @@ USD = (totdlrs * 7.85);
 
 Day3 
 
-##1. Learn about binary, decimal and hexadecimal numbers
+1. #Learn about binary, decimal and hexadecimal numbers
 
 Decimal has a base of 10 for example 25 is 2x10 + 5x1, in the ones digit we have a one and in the 10 digits we have a 5. 10 to the 0 is equal to one.
 Binary is a base 2 number system.
@@ -69,5 +69,52 @@ Hex: Done with division by 16, the result is 7CB
       la $a0, message
       syscall
 
+5. Base on the examples and the guide of the low-level language: 5.1 Create a program to add two numbers given by the user 5.2 Create a program that display your name
+
+Program to add two numbers
+.data
+msg1: .asciiz "\nIngrese un numero: "
+msg2: .asciiz "\nIngrese un segundo numero: "
+result: .asciiz "\nEl resultado es: "
+
+.text
+li $v0,4
+la $a0,msg1
+syscall
+
+li $v0,5
+syscall
+move $t1,$v0
+
+li $v0,4
+la $a0,msg2
+syscall
+
+li $v0,5
+syscall
+move $t2,$v0
+
+Add $t3,$t1,$t2
+
+li $v0,4
+la $a0,result
+syscall
+
+li $v0,1
+move $a0,$t3
+syscall
+
+li $v0,10
+syscall
+
+Program to print name.
+
+ .data
+    message: .asciiz "\nMy name is Chrystopper!\n"
+  .text
+    main:
+      li $v0, 4
+      la $a0, message
+      syscall
 
 

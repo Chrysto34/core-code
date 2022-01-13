@@ -1,6 +1,7 @@
 # First month of the bootcamp 
 Day1: A bit of history and reviewed the tools. will see what the future holds
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Day2: 
 1. Intermidiate code for interpretation languages, or also called bytecode
@@ -33,8 +34,7 @@ USD = (totdlrs * 7.85);
 - Low level are the ones where it's easier for the computer to understand
 - Compilado alto nivel, objeto bajo nivel y organizado ya es un objeto ejecutable
 - Assembler lenguaje low level
-- 
-
+ 
 
 
 
@@ -42,10 +42,32 @@ USD = (totdlrs * 7.85);
 
 
 
-
-
-
-
 Day3 
 
-Hex = CAFE    Binary = 1100101011111110 Decimal =  51966
+##1. Learn about binary, decimal and hexadecimal numbers
+
+Decimal has a base of 10 for example 25 is 2x10 + 5x1, in the ones digit we have a one and in the 10 digits we have a 5. 10 to the 0 is equal to one.
+Binary is a base 2 number system.
+Hexadecimal is base 16, however when the number goes after 9 we start with A, B, C, D, E, or F
+
+
+2.Translate the year you where born to binary, decimal and hexadecimal
+Decimal: 1995
+Binary:  Done with the table of 2 to the power of 10. The result is 11111001011
+Hex: Done with division by 16, the result is 7CB
+
+
+3. Convert Hex = CAFE  to   Binary = 1100101011111110 Decimal =  51966
+
+4. Use a Low-level language, for example MIPS aseembler, to do so, you will need to follow this guide. We recomend to check the guide first but also this presentation could be helpful.
+
+.data
+    message: .asciiz "\nHello, World!\n"
+  .text
+    main:
+      li $v0, 4
+      la $a0, message
+      syscall
+
+
+

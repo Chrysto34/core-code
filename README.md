@@ -71,7 +71,10 @@ Hex: Done with division by 16, the result is 7CB
 
 5. Base on the examples and the guide of the low-level language: 5.1 Create a program to add two numbers given by the user 5.2 Create a program that display your name
 
+
+
 Program to add two numbers
+
 .data
 msg1: .asciiz "\nIngrese un numero: "
 msg2: .asciiz "\nIngrese un segundo numero: "

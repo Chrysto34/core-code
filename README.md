@@ -123,7 +123,13 @@ Program to print name.
 
 Day 4, 01/13/2022
 
-Started the Udacity Git course for version control.
+1. Famous/Real world applications done with Javascript:
+
+- Netflix
+- Facebook
+- Candy Crush
+
+2. Started the Udacity Git course for version control.
 
 
 

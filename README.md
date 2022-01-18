@@ -131,6 +131,16 @@ Day 4, 01/13/2022
 
 2. Started the Udacity Git course for version control.
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Week 2
+
+Day 1
+
+Created code wars user 
+https://www.codewars.com/users/Chrysto34
+
+Watched video.
 
 
 

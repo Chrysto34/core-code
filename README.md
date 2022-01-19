@@ -142,6 +142,68 @@ https://www.codewars.com/users/Chrysto34
 
 Watched video.
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Day 2
+
+Attended class
+
+Watched video on how to google terms easier.
+
+Codewars Solutions
+
+Number 1
+
+function multiply(a, b){
+return  a * b
+}
+
+#2
+
+function uniTotal (string) {
+let suma = 0;
+    for(let i = 0; i < string.length; i++) {
+        let char_code = string[i].charCodeAt(0);
+        suma += char_code;
+    }
+    return suma;
+}
+
+
+
+
+
+#3 
+function getChar(index){
+let char = String.fromCharCode(c);
+return char
+}
+
+
+#4
+
+function addBinary(a,b) {
+let num = a + b;
+let bin = num.toString(2);
+  return bin;
+}
+
+#5
+
+function finalGrade (exam, projects) {
+  let total = 0;
+  if (exam > 90 || projects > 10 ){
+     total = 100;
+  }else if (exam > 75 && projects >= 5){
+    total = 90;
+  } else if (exam > 50 && projects >= 2){
+    total = 75; 
+  }else { 
+     total = 0;
+  }
+  
+  return  total;
+}
 
 
       

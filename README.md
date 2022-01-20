@@ -206,6 +206,54 @@ function finalGrade (exam, projects) {
 }
 
 
-      
+Day #3 -- CodeWars
+
+#1
+function dutyFree(normPrice, discount, hol){
+
+  let totalb = hol/[normPrice*(discount/100) ]
+  return Math.floor(totalb)
+}
+
+
+
+#2
+
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  // your code here
+  let doub = Math.abs(dadYearsOld - (sonYearsOld*2));
+  return doub;
+}
+
+
+#3
+
+
+function validSpacing(s) {
+  // write your code here
+  const reg = /(^\s|\s$|\s{2,})/;
+  return !(reg.test(s));
+}
+
+Could be done with trim 
+https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+Validate the original string with the one that has been trimmed
+Using find
+
+
+#4
+
+function fakeBin(x){
+  var newStr = "";
+  for(var i=0;i<x.length;i++){
+    if(Number(x[i])>=5){
+      newStr += "1"
+    }
+    else{
+      newStr += "0";
+    }
+  }
+  return newStr;
+}
 
 

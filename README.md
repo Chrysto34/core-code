@@ -256,4 +256,10 @@ function fakeBin(x){
   return newStr;
 }
 
+-------------------------------------------------------------------------------------------------------------------------
+
+Day 4
+
+I am Chrystopper. I'm currently working for a BPO in the customer experience department, I’ve been part of that industry for almost 7 years. Also learning coding on my own and how to develop websites, I have experience with CSS, HTML, and a bit of javascript, from online courses. I want to become a web developer within this year and start working in this field since it’s always been one of my passions. I adapt easily to different scenarios and keep learning and think that tech is a great field.
+
 

@@ -262,4 +262,31 @@ Day 4
 
 I am Chrystopper. I'm currently working for a BPO in the customer experience department, I’ve been part of that industry for almost 7 years. Also learning coding on my own and how to develop websites, I have experience with CSS, HTML, and a bit of javascript, from online courses. I want to become a web developer within this year and start working in this field since it’s always been one of my passions. I adapt easily to different scenarios and keep learning and think that tech is a great field.
 
+Day 5
+
+Test
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Day 1 - Week 03 - 01/24/2022
+
+Solution to codewars #1
+function likes(names) {
+  // TODO
+let b = names.length - 2;
+if(names.length == []){
+ return("no one likes this");
+} else if (names.length == 1 ){
+return( names[0] + ' likes this');  
+} else if (names.length == 2 ){
+return( names[0] + ' and ' + names[1] + ' like this');  
+} else if (names.length == 3 ){
+return( names[0] + ", " +  names[1] + ' and ' + names[2] + ' like this');  
+} else if (names.length == 4 ){
+return( names[0] + ", " +  names[1] + ' and' + ' 2 others like this');  
+} else if (names.length > 4 ){
+return( names[0] + ", " +  names[1] + ' and '+ b + ' others like this');  
+} 
+}
+
 

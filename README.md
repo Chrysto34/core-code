@@ -334,5 +334,74 @@ decodeMorse = function(morseCode){
     }
   }
 
+--------------------------------------------------------------------------------------------------------------------------
+
+Codewars Tuesday 01/25/2022
+
+Codewar# 1
+
+decodeMorse = function(morseCode){
+  //your code here
+morseCode = morseCode.trim();
+  let refinedData = morseCode.split('   ');
+  let result = [];
+  
+  for (let i = 0; i < refinedData.length; i++) {
+    let temp = refinedData[i].split(' ');
+    for (let j = 0; j < temp.length; j++) {
+      if (MORSE_CODE[temp[j]]) {
+        result.push(MORSE_CODE[temp[j]]);
+      }
+    }
+    
+    if (i !== refinedData.length - 1) {
+    result.push(' ');
+    }
+  }
+  return result.join('');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Codewar# 2
+
+var reg = /\d/;
+
+function order(words){
+  // ...
+  return words.split(' ').sort(comparator).join(' ');
+  
+}
+
+function comparator(word, nextWord){
+  return +word.match(reg) - +nextWord.match(reg)
+}
+
+
+
+Codewar# 3
+function pigIt(str){
+  //Code here
+  str = str.trim().split(/\s{1,}/);
+    return str.map(val => {
+        if (/^[A-Za-z]+$/.test(val)) {
+            return `${val.slice(1)}${val.slice(0, 1)}ay`;
+        }
+        return val;
+    }).join(' ');
+}
+
 
 

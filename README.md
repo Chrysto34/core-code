@@ -403,5 +403,70 @@ function pigIt(str){
     }).join(' ');
 }
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Codewar#1
+
+function validParentheses(parens) {
+  // your code here ..
+
+  let a = 0;
+  let o = 0;
+  if(parens.length == 1 || parens[0] == ")") return false;
+  for(let i = 0;i< parens.length; i++){
+    
+    if(parens[i] == '('){
+     a++  
+    }else if(parens[i] == ')'){
+      a--
+       if(a < 0){
+   return false;}
+    }
+    
+  }
+  
+  return a == 0;
+}
+
+Codewar#2
+
+function toCamelCase(str){
+var strArray;
+  if (str.indexOf('-') !== -1){ //if delineated by -
+    strArray = str.split('-');
+  } else {
+    strArray = str.split('_');  //if delineated by _
+  }
+
+  let fnlstr = strArray[0];
+  for(let i = 1; i < strArray.length; i++){
+    fnlstr += strArray[i].substr(0,1).toUpperCase()+strArray[i].slice(1);
+  }
+  
+return fnlstr;  
+}
+
+
+Codewar#3
+
+var uniqueInOrder=function(iterable){
+  //your code here - remember iterable can be a string or an array
+  const result = []
+  
+  for(let i = 0; i < iterable.length; i++){
+    if(iterable[i] !== iterable[i + 1]){
+      result.push(iterable[i])
+    }
+  }
+  
+  return result
+}
+------------------------------------------------------------------------------
+
+01/27/2022
+
+
+
 
 

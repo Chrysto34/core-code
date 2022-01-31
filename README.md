@@ -466,6 +466,60 @@ var uniqueInOrder=function(iterable){
 
 01/27/2022
 
+Kata# 1
+
+function foldArray(array, runs) {
+    let counterRuns = 0;
+    let arrayPrimary = [...array];
+    let result = [];
+    while (counterRuns != runs) {
+        result = arrayPrimary.map((value, index, arr) => {
+            if (index != arr.length - 1) {
+                value += arr[arr.length - 1];
+            }
+            arr.pop();
+            return value;
+        });
+        arrayPrimary = result.filter((num) => num != undefined);
+        counterRuns++;
+    }
+    return result.filter((num) => num != undefined);
+    
+    
+Kata #2
+
+var encryptThis = function(text) {
+  // Implement me! :)
+  let rr = text.split(' ');
+  let output = [];
+  
+  rr.forEach(str => {
+    if (str.length === 1) {
+      output.push(str.charCodeAt(0));
+    } 
+    else {
+      let tempStr = str.split('');
+      tempStr[0] = str.charCodeAt(0);
+      tempStr[1] = str[str.length - 1];
+      tempStr[str.length - 1] = str[1];
+      output.push(tempStr.join(''));
+    }
+  });
+  
+  return output.join(' ');
+}
+
+
+Kata #3
+
+function list(names){
+  //your code here
+  const coma = ', ';
+  const sign = ' & ';
+  return names.reduce((pre, curr, indice)=> `${pre}${(indice==names.length-1 ? sign : coma)}${curr.name}`, '').slice(2).trim();
+}
+
+
 
 
 

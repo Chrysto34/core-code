@@ -523,11 +523,12 @@ function list(names){
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Monday 01/31/2022
+                                                                                     Monday 01/31/2022
 
 Watched videos.
 
-Tuesday 02/01/2022
+
+                                                                                     Tuesday 02/01/2022
 
 
 First type script Ex
@@ -552,5 +553,54 @@ export function logPerson(user: User) {
 
 console.log('Users:');
 users.forEach(logPerson);
+
+Second type script Ex
+
+interface User {
+    name: string;
+    age: number;
+    occupation: string;
+}
+
+interface Admin {
+    name: string;
+    age: number;
+    role: string;
+}
+
+export type Person = User | Admin;
+
+export const persons: Person[] = [
+    {
+        name: 'Max Mustermann',
+        age: 25,
+        occupation: 'Chimney sweep'
+    },
+    {
+        name: 'Jane Doe',
+        age: 32,
+        role: 'Administrator'
+    },
+    {
+        name: 'Kate Müller',
+        age: 23,
+        occupation: 'Astronaut'
+    },
+    {
+        name: 'Bruce Willis',
+        age: 64,
+        role: 'World saver'
+    }
+];
+
+export function logPerson(user: Person) {
+    console.log(` - ${user.name}, ${user.age}`);
+}
+
+persons.forEach(logPerson);
+
+
+Third Typescript Excercise
+
 
 

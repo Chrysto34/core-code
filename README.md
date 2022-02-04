@@ -655,3 +655,23 @@ persons.forEach(logPerson);
 // In case if you are stuck:
 // https://www.typescriptlang.org/docs/handbook/advanced-types.html#using-the-in-operator
 
+
+Kata#1 Tuesday Week 4
+
+function findOdd(A) {
+  //happy coding!
+
+var count = 0;
+  for(var i = 0; i<A.length; i++){
+    for(var j = 0; j<A.length; j++){
+      if(A[i] == A[j]){
+        count++;
+      }
+    }
+    if(count % 2 != 0 ){
+      return A[i];
+    }
+  }
+}
+
+

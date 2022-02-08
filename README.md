@@ -1,4 +1,6 @@
-<details><summary>Week 1</summary>
+                                                                   Weekly Summary
+
+<details><summary>Week 01</summary>
 <p>
 
 # First month of the bootcamp 
@@ -139,7 +141,7 @@ Day 4, 01/13/2022
 </p>
 </details> 
  
-<details><summary>Week 2</summary>
+<details><summary>Week 02</summary>
 <p>
 
  Day 1

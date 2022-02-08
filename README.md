@@ -721,3 +721,78 @@ function createPhoneNumber(numbers){
   }
   return `(${first}) ${second}-${third}`
 }
+
+
+
+                                                                              Kata#1 Thursday Week 4
+
+
+function isPangram(string){
+    //...
+    string = string.toLowerCase();
+    
+    for(let i = 97; i <= 122; i++) {
+        if(string.indexOf(String.fromCharCode(i)) < 0) return false;
+    }
+    return true;
+}
+
+
+                                                                              Kata#2 Thursday Week 4
+
+function findMissingLetter(array)
+{
+  var string = array.join("");
+  for (var i = 0; i < string.length; i++) {
+    if (string.charCodeAt(i + 1) - string.charCodeAt(i) != 1) {
+      return String.fromCharCode(string.charCodeAt(i) + 1);
+    }
+  }
+}
+
+
+                                                                              Kata#3 Thursday Week 4
+function findUniq(arr) {
+  // do magic 
+   arr.sort((a,b)=>a-b);
+  return arr[0]==arr[1]?arr.pop():arr[0]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                              Kata#4 Thursday Week 4
+
+function revrot(str, sz) {
+    // your code
+  if(sz <= 0 || sz > str.length) return '';
+  let regex = new RegExp(`(\\d){${sz}}`, 'g');
+  console.log(str.match(regex));
+  return str.match(regex).reduce((prev, curr) => {
+    let mod = curr.split('').reduce((pre, current) => {
+      return pre + Math.pow(current, 3);
+    },0);
+    return `${prev}${
+      mod % 2 === 0? curr.split('').reverse().join('')
+      : `${curr.substring(1, curr.length)}${curr[0]}`
+    }`;
+  }, '');
+}
+
+
+                                                                              Kata#5 Thursday Week 4
+
+
+function find(rats) {
+    // return number of poisoned bottle
+  
+  return rats.reduce((a,b) => a + Math.pow(2, b),0);
+}

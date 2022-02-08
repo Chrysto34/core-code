@@ -656,7 +656,7 @@ persons.forEach(logPerson);
 // https://www.typescriptlang.org/docs/handbook/advanced-types.html#using-the-in-operator
 
 
-                                                                                                                                 Kata#1 Tuesday Week 4
+                                                                                     Kata#1 Tuesday Week 4
 
 function findOdd(A) {
   //happy coding!
@@ -676,7 +676,7 @@ var count = 0;
 
 
 
-                                                                                                                              Kata#2 Tuesday Week 4
+                                                                                    Kata#2 Tuesday Week 4
 
 function spinWords(string){
   //TODO Have fun :)
@@ -691,4 +691,33 @@ function spinWords(string){
   result = stringArray.join(' ');
   });
 return result;
+}
+
+
+                                                                                  Kata#1 Wednesday Week 4
+                                                                                  
+function arrayDiff(a, b) {
+  if(b.length === 0)return a;
+  return a.filter((num) => !b.includes(num));
+}
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  Kata#2 Wednesday Week 4
+
+function createPhoneNumber(numbers){
+  let first = "";
+  let second = "";
+  let third = "";
+  for(let i = 0; i < numbers.length; i++){
+    if(i < 3){
+     first = first.concat(numbers[i].toString())
+    } else if(i < 6){
+     second = second.concat(numbers[i].toString())
+    } else{
+     third = third.concat(numbers[i].toString())
+    }
+  
+  }
+  return `(${first}) ${second}-${third}`
 }

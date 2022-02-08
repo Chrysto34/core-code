@@ -139,9 +139,10 @@ Day 4, 01/13/2022
 </p>
 </details> 
  
-Week 2
+<details><summary>Week 2</summary>
+<p>
 
-Day 1
+ Day 1
 
 Created code wars user 
 https://www.codewars.com/users/Chrysto34
@@ -274,7 +275,13 @@ Test
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Day 1 - Week 03 - 01/24/2022
+</p>
+</details> 
+ 
+<details><summary>Week 03</summary>
+<p> 
+
+ Day 1 - Week 03 - 01/24/2022
 
 Solution to codewars #1
 function likes(names) {
@@ -529,6 +536,13 @@ function list(names){
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
+ </p>
+</details> 
+ 
+ 
+ <details><summary>Week 04</summary>
+<p> 
+ 
                                                                                      Monday 01/31/2022
 
 Watched videos.
@@ -802,3 +816,8 @@ function find(rats) {
   
   return rats.reduce((a,b) => a + Math.pow(2, b),0);
 }
+
+ 
+ 
+ </p>
+</details>  

@@ -1,3 +1,6 @@
+<details><summary>Week 1</summary>
+<p>
+
 # First month of the bootcamp 
 Day1: A bit of history and reviewed the tools. will see what the future holds
 
@@ -133,6 +136,9 @@ Day 4, 01/13/2022
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+</p>
+</details> 
+ 
 Week 2
 
 Day 1

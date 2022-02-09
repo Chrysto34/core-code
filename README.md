@@ -1,4 +1,4 @@
-                                                                   Weekly Summary
+                                                                   #Weekly Summary
 
 <details><summary>Week 01</summary>
 <p>
@@ -823,3 +823,29 @@ function find(rats) {
  
  </p>
 </details>  
+  
+  
+ 
+<details><summary>Week 05</summary>
+<p>
+  
+  
+                                                          Kata#1 Monday Week 5
+
+
+export function squareSum(numbers: number[]): number {
+    return numbers.reduce( (total, current) => total + Math.pow(current,2),0);
+}
+
+
+                                                          Kata#5 Monday Week 5  
+
+export function warnTheSheep(queue: string[]): string {
+ let wolf = queue.indexOf('wolf');
+  return wolf === queue.length -1 ? 'Pls go away and stop eating my sheep' : `Oi! Sheep number ${queue.length - wolf -1}! You are about to be eaten by a wolf!`
+}
+
+  
+
+</p>
+</details> 

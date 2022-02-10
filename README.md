@@ -830,11 +830,37 @@ function find(rats) {
 <p>
   
   
-                                                          Kata#1 Monday Week 5
+                                                          Kata#2 Monday Week 5
 
 
 export function squareSum(numbers: number[]): number {
     return numbers.reduce( (total, current) => total + Math.pow(current,2),0);
+}
+
+  
+                                                          Kata#3 Monday Week 5
+
+export class G964 {
+        // your code
+public static nbYear = (p0: number,percent: number,aug: number,p: number) => {
+    let years = 0;
+    while (p > p0) {
+      p0 += p0 * (percent / 100) + aug;
+      years++;
+    }
+    return years;
+  };
+    
+}
+
+                                                         Kata#4 Monday Week 5
+
+export function accum(s: string): string {
+   return s.split("").reduce((prev, curr, index, arr) => {
+    return `${prev}${curr[0].toUpperCase()}${curr.repeat(index).toLowerCase()}${
+      index < arr.length - 1 ? "-" : ""
+    }`;
+  }, "");
 }
 
 

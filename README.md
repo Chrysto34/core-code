@@ -890,8 +890,64 @@ export function warnTheSheep(queue: string[]): string {
 }     
   
   
-                                                         Kata#2 Tuesday Week 5
+                                                         Kata#3 Tuesday Week 5
   
+  export function validBraces(braces: string): boolean {
+  const arrayBraces = braces.split("");
+  let counter: number = 0;
+  let result: boolean = false;
+  for (let i = 0; i < arrayBraces.length; i++) {
+    if (arrayBraces[i] == ")") {
+      counter--;
+      if (arrayBraces[i - 1] == "(") result = true;
+    } else if (arrayBraces[i] == "}") {
+      counter--;
+      if (arrayBraces[i - 1] == "{") result = true;
+    } else if (arrayBraces[i] == "]") {
+      counter--;
+      if (arrayBraces[i - 1] == "[") result = true;
+    } else {
+      counter++;
+    }
+    if (counter < 0) return false;
+  }
+  return result;
+}
+  
+                                                           Kata#4 Tuesday Week 5
+function displayBoard(board, width) {
+  let finishBoard = "";
+  const rows = board.length / width;
+  const rowSeparate = "-";
+  let positions = 0;
+  for (let i = 0; i < rows; i++) {
+    for (let j = 0; j < width; j++) {
+      finishBoard += ` ${board[positions++]} ${j < width - 1 ? "|" : ""}`;
+    }
+    finishBoard += `${
+      i < rows - 1 ? `\n${rowSeparate.repeat(width * 4 - 1)}\n` : ""
+    }`;
+  }
+
+  return finishBoard;
+}
+  
+  
+                                                             Kata#1 Wednesday Week 5
+  
+`  export function duplicateEncode(word: string) {
+  return word
+    .toLowerCase()
+    .split("")
+    .reduce((prev, curr, index, array) => {
+      let regex = new RegExp(`[${curr}]|\curr`, "g");
+      return prev + `${array.join("").match(regex)?.length == 1 ? "(" : ")"}`;
+    }, "");
+}         `                                                  
+  
+                                                             Kata#2 Wednesday Week 5
+
+
   
                         
 </p>

@@ -888,6 +888,11 @@ export function warnTheSheep(queue: string[]): string {
       return (''+arrRes).includes('.') ? -1 : arrRes;
     }
 }     
+  
+  
+                                                         Kata#2 Tuesday Week 5
+  
+  
                         
 </p>
 </details> 

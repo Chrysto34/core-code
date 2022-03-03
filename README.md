@@ -872,7 +872,23 @@ export function warnTheSheep(queue: string[]): string {
 }
 
   
+                                                        Kata#1 Tuesday Week 5
+                        
+                        
+                                                        Kata#2 Tuesday Week 5
 
+    export class G964 {
+
+    public static digPow = (n: number, p: number) => {
+      let arr: number[] = String(n).split("").map((n)=>{
+          return Number(n)
+        })
+
+      let arrRes = arr.reduce((acum, act, i, arr) => acum + (Math.pow(arr[i], p+i)), 0) / n;
+      return (''+arrRes).includes('.') ? -1 : arrRes;
+    }
+}     
+                        
 </p>
 </details> 
   
